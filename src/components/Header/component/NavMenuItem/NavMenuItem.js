@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import mdArrowDropdown from '@iconify-icons/ion/md-arrow-dropdown';
 
 import './NavMenuItem.scss';

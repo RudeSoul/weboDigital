@@ -1,7 +1,37 @@
 @import '~styles/main';
 
 .Header {
+  max-width: 1920px;
+
+  @include tablet {
+    display: none;
+  }
+
+  padding-top: 38px;
+  padding-bottom: 38px;
+
   @include e(Nav) {
-    min-width: 1920px;
+    align-items: center;
+
+    .logo {
+      margin-left: 140px;
+      width: 258px;
+    }
+
+    .menu {
+      margin-left: 48px;
+    }
+    .search {
+    }
+    .phone {
+      margin-right: 44px;
+      margin-left: 76px;
+
+      align-items: center;
+
+      @include e(number) {
+        margin-left: 18px;
+      }
+    }
   }
 }
