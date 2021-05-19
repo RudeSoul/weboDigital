@@ -1,0 +1,13 @@
+@import '~styles/main';
+
+.Dropdown {
+  @include e(container) {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 52px;
+
+    .list {
+      margin-right: 114px;
+    }
+  }
+}
