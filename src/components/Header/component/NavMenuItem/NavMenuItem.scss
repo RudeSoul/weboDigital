@@ -1,6 +1,8 @@
 @import '~styles/main';
 
 .nav-item {
+  align-items: center;
+  margin-right: 46px;
   .value {
     text-align: left;
     font-weight: 500;
@@ -10,5 +12,9 @@
 
     color: color(primary-black);
     text-transform: uppercase;
+  }
+
+  .icon {
+    margin-left: 8px;
   }
 }

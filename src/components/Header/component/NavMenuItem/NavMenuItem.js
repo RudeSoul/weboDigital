@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { Icon, InlineIcon } from '@iconify/react';
+import mdArrowDropdown from '@iconify-icons/ion/md-arrow-dropdown';
+
 import './NavMenuItem.scss';
 
 export default function NavMenuItem(props) {
@@ -10,7 +13,14 @@ export default function NavMenuItem(props) {
       <div className='value'>{value}</div>
       {icon === 'true' && (
         <>
-          <div className='icon'>icon</div>
+          <div className='icon'>
+            <Icon
+              icon={mdArrowDropdown}
+              color='#6FBE44'
+              width='14'
+              height='11'
+            />
+          </div>
         </>
       )}
     </div>
