@@ -1,0 +1,14 @@
+@import '~styles/main';
+
+.nav-item {
+  .value {
+    text-align: left;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: color(primary-black);
+    text-transform: uppercase;
+  }
+}

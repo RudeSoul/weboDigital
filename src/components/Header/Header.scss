@@ -1,0 +1,7 @@
+@import '~styles/main';
+
+.Header {
+  @include e(Nav) {
+    min-width: 1920px;
+  }
+}
