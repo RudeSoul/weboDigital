@@ -1,10 +1,12 @@
 @import '~styles/main';
 
 .Dropdown {
+  width: 100%;
   @include e(container) {
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 52px;
+    border: 1px solid color(border-color);
 
     .list {
       margin-right: 114px;

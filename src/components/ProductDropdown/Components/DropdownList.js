@@ -3,7 +3,7 @@ import React from 'react';
 import './DropdownList.scss';
 
 export default function DropdownList({ header, item }) {
-  console.log(item);
+  
   return (
     <>
       <div className='flex-column dropdown'>

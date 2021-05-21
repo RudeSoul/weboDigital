@@ -9,6 +9,6 @@ export default props => {
         <div className="HomePage">
             Home Page
         </div>
-        <ProductDropdown></ProductDropdown>
+        
     </>);
 }

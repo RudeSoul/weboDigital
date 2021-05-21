@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Header.scss';
 
@@ -7,8 +7,11 @@ import NavMenuItem from './component/NavMenuItem/NavMenuItem';
 
 import SearchIcon from './assets/icons/searchIcon.svg';
 import PhoneIcon from './assets/icons/phoneIcon.svg';
+import ProductDropdown from 'components/ProductDropdown/ProductDropdown';
 
 export default (props) => {
+  const [showElement, setShowElement] = useState(false);
+
   return (
     <div className='Header'>
       <div className='flex Header__Nav'>
@@ -17,7 +20,13 @@ export default (props) => {
         </div>
 
         <div className='flex menu'>
-          <NavMenuItem value='horticulture' icon='true'></NavMenuItem>
+          <span
+            onClick={() => {
+              setShowElement(!showElement);
+            }}
+          >
+            <NavMenuItem value='horticulture' icon='true'></NavMenuItem>
+          </span>
           <NavMenuItem value='viticulture' icon='true'></NavMenuItem>
           <NavMenuItem value='parts' icon='false'></NavMenuItem>
           <NavMenuItem value='find a dealer' icon='false'></NavMenuItem>
@@ -25,6 +34,7 @@ export default (props) => {
           <NavMenuItem value='resources' icon='true'></NavMenuItem>
           <NavMenuItem value='contact' icon='false'></NavMenuItem>
         </div>
+
         <div className='search'>
           <img src={SearchIcon} alt='search Icon' />
         </div>
@@ -34,6 +44,14 @@ export default (props) => {
           </div>
           <div className='phone__number'>1800 269 773</div>
         </div>
+      </div>
+      <div
+        className='product-dropdown'
+        style={{
+          display: showElement ? 'block' : 'none',
+        }}
+      >
+        <ProductDropdown></ProductDropdown>
       </div>
     </div>
   );
