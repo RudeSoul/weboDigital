@@ -1,7 +1,7 @@
 {
-  "name": "react-pwa-starter",
+  "name": "Webo Digital",
   "version": "0.1.0",
-  "author": "Ravi Tiwari <Github: tiwarirabi>",
+  "author": "Rude Soul <Github: Rudesoul>",
   "private": true,
   "dependencies": {
     "node-sass": "^4.14.1",
